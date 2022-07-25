@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Work</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: aqua;">
+
+    <div style="margin: 0.5em; 
+                display:flex; 
+                flex-direction: row; 
+                justify-content: center; 
+                align-items: center; 
+                background-color: black;">
+      <div style="margin: auto;">
+        <button>Стоп</button>
+        <button>Детальна інфа</button>
+        <button>Минулий рекорд</button>
+      </div>
+    </div>
+
+    <div id="tables" style="display: flex; visibility: hidden" class="container">
+      <div>
+        <table id="extended_table">
+          <tr>
+            <td id="cell_start_time_text">Час старту</td>
+            <td id="cell_start_time_val">##</td>
+          </tr>
+          <tr>
+            <td id="cell_common_speed_text">Загальна швидкість</td>
+            <td id="cell_common_speed_val">##</td>
+          </tr>
+          <tr>
+            <td id="cell_common_speed_for_time_text">Заг. шв. за 15 сек</td>
+            <td id="cell_common_speed_for_time_val">##</td>
+          </tr>
+          <tr>
+            <td id="cell_errors_absolute_text">Помилок загалом</td>
+            <td id="cell_errors_absolute_val">##</td>
+          </tr>
+          <tr>
+            <td id="cell_errors_text">Процент помилок</td>
+            <td id="cell_errors_val">##</td>
+          </tr>
+          <tr>
+            <td id="cell_frequency_text">Скважність</td>
+            <td id="cell_frequency_val">##</td>
+          </tr>
+          <tr>
+            <td id="cell_inputed_press_text">Щойно натиснуто</td>
+            <td id="cell_inputed_press_val">##</td>
+          </tr>
+          <tr>
+            <td id="cell_inputed_up_text">Щойно відпущено</td>
+            <td id="cell_inputed_up_val">##</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div>
+        <table id="main_table">
+          <tr>
+            <th id="cell_time_text">Часу нажимав</td>
+            <th id="cell_time_val">0</td>
+          </tr>
+          <tr>
+            <th id="cell_right_speed_text">Швидкість</td>
+            <th id="cell_right_speed_val">0</td>
+          </tr>
+          <tr>
+            <th id="cell_right_speed_for_time_text">Шв. за 15 сек.</td>
+            <th id="cell_right_speed_for_time_val">0</td>
+          </tr>
+          <tr>
+            <th id="cell_right_absolute_text">Правильно нажато</td>
+            <th id="cell_right_absolute_val">0</td>
+          </tr>
+          <tr>
+            <th id="cell_right_text">Правильно нажато</td>
+            <th id="cell_right_val">0</td>
+          </tr>
+          <tr>
+            <th id="cell_inputed_symbols_text">Нажато загалом</td>
+            <th id="cell_inputed_symbols_val">0</td>
+          </tr>
+          <tr>
+            <th id="cell_scores_text">Набрано очок</td>
+            <th id="cell_scores_val">0</td>
+          </tr>
+          <tr>
+            <th id="cell_need_to_input_text">Нажати зараз</td>
+            <th id="cell_need_to_input_val">0</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div>
+        <table id="pushed_table">
+          <tr>
+            <th id="cell_name_number">Номер</th>
+            <th id="cell_name_symbol">Символ</th>
+            <th id="cell_name_time">Час</th>
+            <th id="cell_name_right">Чи правильно</th>
+          </tr>
+          <tr>
+            <td id="cell_6_number">Номер</td>
+            <td id="cell_6_symbol">Символ</td>
+            <td id="cell_6_time">Час</td>
+            <td id="cell_6_right">Чи правильно</td>
+          </tr>
+          <tr>
+            <td id="cell_5_number">Номер</td>
+            <td id="cell_5_symbol">Символ</td>
+            <td id="cell_5_time">Час</td>
+            <td id="cell_5_right">Чи правильно</td>
+          </tr>
+          <tr>
+            <td id="cell_4_number">Номер</td>
+            <td id="cell_4_symbol">Символ</td>
+            <td id="cell_4_time">Час</td>
+            <td id="cell_4_right">Чи правильно</td>
+          </tr>
+          <tr>
+            <td id="cell_3_number">Номер</td>
+            <td id="cell_3_symbol">Символ</td>
+            <td id="cell_3_time">Час</td>
+            <td id="cell_3_right">Чи правильно</td>
+          </tr>
+          <tr>
+            <td id="cell_2_number">Номер</td>
+            <td id="cell_2_symbol">Символ</td>
+            <td id="cell_2_time">Час</td>
+            <td id="cell_2_right">Чи правильно</td>
+          </tr>
+          <tr>
+            <td id="cell_1_number">Номер</td>
+            <td id="cell_1_symbol">Символ</td>
+            <td id="cell_1_time">Час</td>
+            <td id="cell_1_right">Чи правильно</td>
+          </tr>
+          <tr>
+            <td id="cell_0_number">Номер</td>
+            <td id="cell_0_symbol">Символ</td>
+            <td id="cell_0_time">Час</td>
+            <td id="cell_0_right">Чи правильно</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      
+  
+      
+    
+
+
+    <dl class="row">
+      <dt class="col-sm-6 text-end">Старт вводу</dt>
+      <dd class="col-sm-6 text-start" id="outbox_time_start_text"></dd>
+    </dl>
+    <dl class="row">
+      <dt class="col-sm-6 text-end">Час після початку</dt>
+      <dd class="col-sm-6 text-start" id="outbox_time_after_start_text">ДЛЯ СТАРТУ ВВЕДІТЬ БУДЬ ЯКИЙ СИМВОЛ НА КЛАВІАТУРІ</dd>
+    </dl>
+    <dl class="row">
+      <dt class="col-sm-6 text-end">Мілісекунди вводу кожного символу</dt>
+      <dd class="col-sm-6 text-start" id="outbox_symbols_time_text"></dd>
+    </dl>
+    <dl class="row">
+      <dt class="col-sm-6 text-end">Ввід кожного символу</dt>
+      <dd class="col-sm-6 text-start" id="outbox_symbols_text"></dd>
+    </dl>
+    
+    <br/><br/><br/>
+    
+    <dl class="row">
+      <dt class="col-sm-6 text-end">Нажато КНОПКУ:</dt>
+      <dd class="col-sm-6 text-start" id="outbox_what_inputed"></dd>
+    </dl>
+    <dl class="row">
+      <dt class="col-sm-6 text-end">Відпущено КНОПКУ:</dt>
+      <dd class="col-sm-6 text-start" id="outbox_what_outputed"></dd>
+    </dl>
+    <dl class="row">
+      <dt class="col-sm-6 text-end">Ввести:</dt>
+      <dd class="col-sm-6 text-start" id="outbox_symbol_to_input">-</dd>
+    </dl>
+    
+    <div class="common_box" style="border:orange; border-width:3px; border-style:solid; background-color: aquamarine;">
+      <h2 class="text-center">
+        <span id="outbox_text_stamina_old" style="background-color: gray;" 
+          class="text-decoration-line-through"></span><span id="outbox_text_stamina" 
+          class="text-muted" 
+          oninput="testFunction()"></span>
+      </p>
+    </div>
+    <script src="test.js" type="module"></script>
+  </body>
+</html>

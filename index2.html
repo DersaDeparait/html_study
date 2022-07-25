@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS in Web</title>
+	
+	<style>
+		h1.blue { color:blue; }
+		h1.red { color:red; }
+		table, th, td {
+			border: 3px solid black;
+			border-collapse: collapse;
+			padding: auto;
+			text-align: left;
+		}
+		*{box-sizing: border-box;}
+		table{border-collapse:collapse;}
+		td,th{padding:5px 15px;text-align:left;}
+		table,th,td{border:1px solid #000;}
+	</style>
+</head>
+<body>
+	<table id="tableId">
+		<thead>
+		 <tr>
+		  <th><input type="checkbox" /></th>
+		  <th><input type="button" value="name"  /></th>
+		  <th>Size</th>
+		  <th>File</th>
+		 </tr>
+		</thead>
+		<tbody>
+		 <tr>
+		  <td><input type="checkbox" /></td>
+		  <td>10Mb</td>
+		  <td>abc.txt</td>
+		 </tr>
+		</tbody>
+	   </table>
+	<table style="width:100%">
+		<caption>Good</caption>
+		<tr>
+			<th>First</th>
+			<th>Second</th>
+		</tr>
+		<tr>
+			<td>First</td>
+			<td>Second</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<h1 class="h1">Розрахунок квадратного рівняння</h1>
+	<t2>Введіть коеіцієнти квадратного рівняння</t2><br>
+	<input id="a1" type="text" value="1" size="5">
+	<t3>*x²+</t3>
+	<input id="b1" type="text" value="2" size="5">
+	<t4>*x+</t4>
+	<input id="c1" type="text" value="5" size="5">
+	<t5> = 0</t5>
+	<br><br>
+	<button id="calculate">calculate</button><br>
+	<t6 id="result" rows="3">Result</t6>
+	<img id="myImage" src="pic.png">
+
+
+	<br><br><br><br>
+	<br>
+	<button id="setRedColor">Change col</button>
+	<br>
+	<button id="button2">Line</button>
+	<br>
+	<textarea name="comment" cols="20" rows="0"></textarea>
+	
+	<script src="test_script.js"></script>
+</body>
+</html>
