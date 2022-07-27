@@ -20,9 +20,11 @@
                 align-items: center; 
                 background-color: black;">
       <div style="margin: auto;">
-        <button>Стоп</button>
-        <button>Детальна інфа</button>
-        <button>Минулий рекорд</button>
+        <button id="button_start">Старт</button>
+        <button id="button_stop" style="visibility: hidden">Стоп</button>
+        <button id="button_time_setting">Час: 10хв</button>
+        <!--<button>Детальна інфа</button>
+        <button>Минулий рекорд</button>-->
       </div>
     </div>
 
@@ -110,88 +112,55 @@
             <th id="cell_name_right">Чи правильно</th>
           </tr>
           <tr>
-            <td id="cell_6_number">Номер</td>
-            <td id="cell_6_symbol">Символ</td>
-            <td id="cell_6_time">Час</td>
-            <td id="cell_6_right">Чи правильно</td>
+            <td id="cell_6_number">-</td>
+            <td id="cell_6_symbol">-</td>
+            <td id="cell_6_time">-</td>
+            <td id="cell_6_right">-</td>
           </tr>
           <tr>
-            <td id="cell_5_number">Номер</td>
-            <td id="cell_5_symbol">Символ</td>
-            <td id="cell_5_time">Час</td>
-            <td id="cell_5_right">Чи правильно</td>
+            <td id="cell_5_number">-</td>
+            <td id="cell_5_symbol">-</td>
+            <td id="cell_5_time">-</td>
+            <td id="cell_5_right">-</td>
           </tr>
           <tr>
-            <td id="cell_4_number">Номер</td>
-            <td id="cell_4_symbol">Символ</td>
-            <td id="cell_4_time">Час</td>
-            <td id="cell_4_right">Чи правильно</td>
+            <td id="cell_4_number">-</td>
+            <td id="cell_4_symbol">-</td>
+            <td id="cell_4_time">-</td>
+            <td id="cell_4_right">-</td>
           </tr>
           <tr>
-            <td id="cell_3_number">Номер</td>
-            <td id="cell_3_symbol">Символ</td>
-            <td id="cell_3_time">Час</td>
-            <td id="cell_3_right">Чи правильно</td>
+            <td id="cell_3_number">-</td>
+            <td id="cell_3_symbol">-</td>
+            <td id="cell_3_time">-</td>
+            <td id="cell_3_right">-</td>
           </tr>
           <tr>
-            <td id="cell_2_number">Номер</td>
-            <td id="cell_2_symbol">Символ</td>
-            <td id="cell_2_time">Час</td>
-            <td id="cell_2_right">Чи правильно</td>
+            <td id="cell_2_number">-</td>
+            <td id="cell_2_symbol">-</td>
+            <td id="cell_2_time">-</td>
+            <td id="cell_2_right">-</td>
           </tr>
           <tr>
-            <td id="cell_1_number">Номер</td>
-            <td id="cell_1_symbol">Символ</td>
-            <td id="cell_1_time">Час</td>
-            <td id="cell_1_right">Чи правильно</td>
+            <td id="cell_1_number">-</td>
+            <td id="cell_1_symbol">-</td>
+            <td id="cell_1_time">-</td>
+            <td id="cell_1_right">-</td>
           </tr>
           <tr>
-            <td id="cell_0_number">Номер</td>
-            <td id="cell_0_symbol">Символ</td>
-            <td id="cell_0_time">Час</td>
-            <td id="cell_0_right">Чи правильно</td>
+            <td id="cell_0_number">-</td>
+            <td id="cell_0_symbol">-</td>
+            <td id="cell_0_time">-</td>
+            <td id="cell_0_right">-</td>
           </tr>
         </table>
       </div>
     </div>
       
-  
-      
     
 
 
-    <dl class="row">
-      <dt class="col-sm-6 text-end">Старт вводу</dt>
-      <dd class="col-sm-6 text-start" id="outbox_time_start_text"></dd>
-    </dl>
-    <dl class="row">
-      <dt class="col-sm-6 text-end">Час після початку</dt>
-      <dd class="col-sm-6 text-start" id="outbox_time_after_start_text">ДЛЯ СТАРТУ ВВЕДІТЬ БУДЬ ЯКИЙ СИМВОЛ НА КЛАВІАТУРІ</dd>
-    </dl>
-    <dl class="row">
-      <dt class="col-sm-6 text-end">Мілісекунди вводу кожного символу</dt>
-      <dd class="col-sm-6 text-start" id="outbox_symbols_time_text"></dd>
-    </dl>
-    <dl class="row">
-      <dt class="col-sm-6 text-end">Ввід кожного символу</dt>
-      <dd class="col-sm-6 text-start" id="outbox_symbols_text"></dd>
-    </dl>
-    
-    <br/><br/><br/>
-    
-    <dl class="row">
-      <dt class="col-sm-6 text-end">Нажато КНОПКУ:</dt>
-      <dd class="col-sm-6 text-start" id="outbox_what_inputed"></dd>
-    </dl>
-    <dl class="row">
-      <dt class="col-sm-6 text-end">Відпущено КНОПКУ:</dt>
-      <dd class="col-sm-6 text-start" id="outbox_what_outputed"></dd>
-    </dl>
-    <dl class="row">
-      <dt class="col-sm-6 text-end">Ввести:</dt>
-      <dd class="col-sm-6 text-start" id="outbox_symbol_to_input">-</dd>
-    </dl>
-    
+
     <div class="common_box" style="border:orange; border-width:3px; border-style:solid; background-color: aquamarine;">
       <h2 class="text-center">
         <span id="outbox_text_stamina_old" style="background-color: gray;" 
